@@ -23,3 +23,6 @@ Airflower is an advanced extension for Apache Airflow designed to bring intellig
   - **PostgreSQL**: To store metadata, logs, and decision history.
   
 ### 3. Architectural Diagram
+
+![Airflower Sequence Diagram](docs/airflower_sequence.png)
+
