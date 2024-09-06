@@ -26,3 +26,4 @@ Airflower is an advanced extension for Apache Airflow designed to bring intellig
 
 ![Airflower Sequence Diagram](docs/airflower_sequence.png)
 
+![Airflower Architectural Diagram](docs/airflower_arch.jpeg)
