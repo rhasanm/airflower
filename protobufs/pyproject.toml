@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "airflower-protobufs"
+authors = ["rhasanm <hasanrakibul.masum@gmail.com>"]
+readme = "README.md"
+version = "0.1.0"
+description = "Protobufs package for Airflower project"
+license = "MIT"
+packages = [{ include = "airflower_protobufs" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio-tools = "^1.66.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate-protobufs = 'scripts.generate:generate_protobufs'
