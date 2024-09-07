@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "strategia"
+version = "0.1.0"
+description = "A project for handling Nexus requests with gRPC"
+authors = ["rhasanm <hasanrakibul.masum@gmail.com>"]
+readme = "README.md"
+packages = [{include = "strategia", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio = "^1.51.1"
+protobuf = "^4.23.0"
+
+[tool.poetry.dev-dependencies]
+grpcio-tools = "^1.51.1"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate-protobufs = "strategia.scripts.generate:main"

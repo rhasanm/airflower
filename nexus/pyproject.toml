@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "nexus"
+version = "0.1.0"
+description = "A project for requesting decisions from Strategia using gRPC"
+authors = ["rhasanm <hasanrakibul.masum@gmail.com>"]
+readme = "README.md"
+packages = [{include = "nexus", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+grpcio = "^1.51.1"
+protobuf = "^4.23.0"
+
+[tool.poetry.dev-dependencies]
+grpcio-tools = "^1.51.1"
+pytest = "^7.4.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+generate-protobufs = "nexus.scripts.generate:main"

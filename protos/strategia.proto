@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package strategia;
+
+service DecisionService {
+  rpc MakeDecision (DecisionRequest) returns (DecisionReply);
+}
+
+message DecisionRequest {
+  string data = 1;
+}
+
+message DecisionReply {
+  string message = 1;
+}
